@@ -1,0 +1,96 @@
+.product {
+  cursor: crosshair;
+  border: 1px solid black;
+  margin: 0.4em 1em 1em 0;
+  padding: 0.4em;
+  user-select: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.product:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.product:active {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: black;
+}
+
+.table td, .table th {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.minus {
+  color: red;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.plus {
+  color: green;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.minus:hover, .plus:hover {
+  background-color: yellow;
+}
+
+.generate {
+  margin: 1em 0;
+  border: 1px solid black;
+  padding: 0.5em;
+  background-color: blue;
+  color: white;
+  border-radius: 0.4em;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.8em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  user-select: none;
+}
+
+.generate:hover {
+  border-radius: 0em;
+  background-color: rgb(203, 203, 255);
+  color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.generate:active {
+  border-radius: 0.2em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.generateText {
+  border: 1px solid black;
+  padding: 1em;
+  font-size: 0.8em;
+  position: relative;
+}
+
+.copy {
+  position: absolute;
+  top: 0.4em;
+  right: 0.6em;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 0.4em 0.6em;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.copy:active {
+  border: 1px solid black;
+  background-color: darkgrey;
+  color: black;
+}
