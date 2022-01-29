@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { packages } from '../packagelist'
 import styles from '../styles/Order.module.css'
@@ -123,7 +124,11 @@ export default function Order() {
   }, [order])
   return (
     <div style={{ padding: '1em', backgroundColor: 'blue' }}>
-      <div style={{ fontSize: '2em', color: 'white' }}>TOOLKIT PEMESANAN RESELLER</div>
+      <div style={{ fontSize: '2em', color: 'white' }}>
+        <div style={{ marginRight: '0.8em', cursor: 'pointer' }} title='Kembali'>
+          <Link href='/'>↩️</Link>
+        </div>
+        TOOLKIT PEMESANAN RESELLER</div>
       <div style={{ backgroundColor: 'white', padding: '0.5em', marginTop: '0.3em' }}>
         <div>
           <div style={{ fontSize: '1.5em', fontVariant: 'small-caps' }}>ID Reseller:</div>
