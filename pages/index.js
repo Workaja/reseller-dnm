@@ -15,14 +15,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.logo}>
-        <Image src={kelinci} alt='kelinci' title='kelinci' layout='responsive' />
+        <Image src={kelinci} alt='Logo' title='logo' layout='responsive' />
       </div>
       <div style={{width: '100%', height: '100%' }}>
         <div className={styles.container}>
           {
             pages.map((p, i) => {
               return (
-                <Link key={i} href={p.url} passHref={true}>
+                <Link key={i} href={p.url} passHref={p.pass}>
                   <div className={styles.button}>
                     {p.title}
                   </div>
