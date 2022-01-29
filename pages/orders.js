@@ -124,7 +124,7 @@ export default function Order() {
   }, [order])
   return (
     <div style={{ padding: '1em', backgroundColor: 'blue' }}>
-      <div style={{ fontSize: '2em', color: 'white' }}>
+      <div style={{ fontSize: '2em', color: 'white', display: 'flex' }}>
         <div style={{ marginRight: '0.8em', cursor: 'pointer' }} title='Kembali'>
           <Link href='/'>↩️</Link>
         </div>
